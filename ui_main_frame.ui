@@ -186,10 +186,6 @@ QPushButton:pressed {
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 2px;
-}
-QPushButton:disabled {
-	background-color: rgb(220,220,220,);
-	color: rgb(150,150,150,);
 }</string>
             </property>
             <property name="text">
@@ -274,10 +270,6 @@ QPushButton:pressed {
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 2px;
-}
-QPushButton:disabled {
-	background-color: rgb(220,220,220,);
-	color: rgb(150,150,150,);
 }</string>
             </property>
             <property name="text">
@@ -419,10 +411,6 @@ QPushButton:pressed {
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 3px;
-}
-QPushButton:disabled {
-	background-color: rgb(220,220,220,);
-	color: rgb(150,150,150,);
 }</string>
                </property>
                <property name="text">
@@ -511,10 +499,6 @@ QPushButton:pressed {
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 3px;
-}
-QPushButton:disabled {
-	background-color: rgb(220,220,220,);
-	color: rgb(150,150,150,);
 }</string>
                </property>
                <property name="text">
@@ -608,10 +592,6 @@ QPushButton:pressed {
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 3px;
-}
-QPushButton:disabled {
-	background-color: rgb(220,220,220,);
-	color: rgb(150,150,150,);
 }</string>
                </property>
                <property name="text">
@@ -705,10 +685,6 @@ QPushButton:pressed {
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 3px;
-}
-QPushButton:disabled {
-	background-color: rgb(220,220,220,);
-	color: rgb(150,150,150,);
 }</string>
                </property>
                <property name="text">
@@ -844,10 +820,6 @@ QPushButton:pressed {
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 3px;
-}
-QPushButton:disabled {
-	background-color: rgb(220,220,220,);
-	color: rgb(150,150,150,);
 }</string>
                </property>
                <property name="text">

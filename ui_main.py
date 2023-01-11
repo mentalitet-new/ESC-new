@@ -78,10 +78,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 127);\n"
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 2px;\n"
-"}\n"
-"QPushButton:disabled {\n"
-"    background-color: rgb(220,220,220,);\n"
-"    color: rgb(150,150,150,);\n"
 "}")
         self.pushButton_min_window.setText("")
         icon = QtGui.QIcon()
@@ -117,10 +113,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 127);\n"
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 2px;\n"
-"}\n"
-"QPushButton:disabled {\n"
-"    background-color: rgb(220,220,220,);\n"
-"    color: rgb(150,150,150,);\n"
 "}")
         self.pushButton_close_window.setText("")
         icon1 = QtGui.QIcon()
@@ -173,10 +165,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 127);\n"
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 3px;\n"
-"}\n"
-"QPushButton:disabled {\n"
-"    background-color: rgb(220,220,220,);\n"
-"    color: rgb(150,150,150,);\n"
 "}")
         self.pushButton_find_camera.setText("")
         icon2 = QtGui.QIcon()
@@ -214,10 +202,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 127);\n"
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 3px;\n"
-"}\n"
-"QPushButton:disabled {\n"
-"    background-color: rgb(220,220,220,);\n"
-"    color: rgb(150,150,150,);\n"
 "}")
         self.pushButton_add_camera.setText("")
         icon3 = QtGui.QIcon()
@@ -256,10 +240,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 127);\n"
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 3px;\n"
-"}\n"
-"QPushButton:disabled {\n"
-"    background-color: rgb(220,220,220,);\n"
-"    color: rgb(150,150,150,);\n"
 "}")
         self.pushButton_play.setText("")
         icon4 = QtGui.QIcon()
@@ -298,10 +278,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 127);\n"
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 3px;\n"
-"}\n"
-"QPushButton:disabled {\n"
-"    background-color: rgb(220,220,220,);\n"
-"    color: rgb(150,150,150,);\n"
 "}")
         self.pushButton_login.setText("")
         icon5 = QtGui.QIcon()
@@ -354,10 +330,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(85, 170, 127);\n"
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 3px;\n"
-"}\n"
-"QPushButton:disabled {\n"
-"    background-color: rgb(220,220,220,);\n"
-"    color: rgb(150,150,150,);\n"
 "}")
         self.pushButton_info.setText("")
         icon6 = QtGui.QIcon()
