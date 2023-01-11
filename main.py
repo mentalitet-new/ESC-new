@@ -19,7 +19,8 @@ class MainFrame(QMainWindow):
         self.ui.pushButton_find_camera.clicked.connect(self.start_camera_search)
         self.setWindowFlags(Qt.FramelessWindowHint)
         # self.setAttribute(Qt.WA_TranslucentBackground)
-
+        self.ui.pushButton_info.clicked.connect(lambda: self.swap_menu(1, True))
+        self.ui.pushButton_find_camera.clicked.connect(lambda: self.swap_menu(2, True))
         self.dragPos = self.pos()
 
 
@@ -34,6 +35,13 @@ class MainFrame(QMainWindow):
         self.row_counter = 0
         self.init_columns_table()
         self.sizegrip = QSizeGrip(self.ui.lable_resize)
+
+    def swap_menu(self, number_stack_wdgt, clicked):
+        if clicked:
+            if number_stack_wdgt == 2:
+                self.ui.stackedWidget.setCurrentWidget(self.ui.page_table)
+            elif number_stack_wdgt == 1:
+                self.ui.stackedWidget.setCurrentWidget(self.ui.page_info)
 
     def init_columns_table(self):
         """
