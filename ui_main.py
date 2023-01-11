@@ -387,10 +387,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.pushButton_find_camera_3 = QtWidgets.QPushButton(self.verticalFrame1)
-        self.pushButton_find_camera_3.setMinimumSize(QtCore.QSize(80, 45))
-        self.pushButton_find_camera_3.setMaximumSize(QtCore.QSize(80, 45))
-        self.pushButton_find_camera_3.setStyleSheet("QPushButton {\n"
+        self.pushButton_find_stop = QtWidgets.QPushButton(self.verticalFrame1)
+        self.pushButton_find_stop.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_stop.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_stop.setStyleSheet("QPushButton {\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
 "}\n"
@@ -404,19 +404,19 @@ class Ui_MainWindow(object):
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 3px;\n"
 "}")
-        self.pushButton_find_camera_3.setText("")
+        self.pushButton_find_stop.setText("")
         icon7 = QtGui.QIcon()
         icon7.addPixmap(QtGui.QPixmap("icon/8666761_square_shape_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_find_camera_3.setIcon(icon7)
-        self.pushButton_find_camera_3.setIconSize(QtCore.QSize(45, 45))
-        self.pushButton_find_camera_3.setDefault(False)
-        self.pushButton_find_camera_3.setFlat(True)
-        self.pushButton_find_camera_3.setObjectName("pushButton_find_camera_3")
-        self.horizontalLayout.addWidget(self.pushButton_find_camera_3)
-        self.pushButton_find_camera_2 = QtWidgets.QPushButton(self.verticalFrame1)
-        self.pushButton_find_camera_2.setMinimumSize(QtCore.QSize(80, 45))
-        self.pushButton_find_camera_2.setMaximumSize(QtCore.QSize(80, 45))
-        self.pushButton_find_camera_2.setStyleSheet("QPushButton {\n"
+        self.pushButton_find_stop.setIcon(icon7)
+        self.pushButton_find_stop.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_find_stop.setDefault(False)
+        self.pushButton_find_stop.setFlat(True)
+        self.pushButton_find_stop.setObjectName("pushButton_find_stop")
+        self.horizontalLayout.addWidget(self.pushButton_find_stop)
+        self.pushButton_find_refresh = QtWidgets.QPushButton(self.verticalFrame1)
+        self.pushButton_find_refresh.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_refresh.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_refresh.setStyleSheet("QPushButton {\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
 "}\n"
@@ -430,15 +430,15 @@ class Ui_MainWindow(object):
 "    color: rgb(0,0,0);  \n"
 "    border-radius: 3px;\n"
 "}")
-        self.pushButton_find_camera_2.setText("")
+        self.pushButton_find_refresh.setText("")
         icon8 = QtGui.QIcon()
         icon8.addPixmap(QtGui.QPixmap("icon/refresh_cw_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_find_camera_2.setIcon(icon8)
-        self.pushButton_find_camera_2.setIconSize(QtCore.QSize(45, 45))
-        self.pushButton_find_camera_2.setDefault(False)
-        self.pushButton_find_camera_2.setFlat(True)
-        self.pushButton_find_camera_2.setObjectName("pushButton_find_camera_2")
-        self.horizontalLayout.addWidget(self.pushButton_find_camera_2)
+        self.pushButton_find_refresh.setIcon(icon8)
+        self.pushButton_find_refresh.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_find_refresh.setDefault(False)
+        self.pushButton_find_refresh.setFlat(True)
+        self.pushButton_find_refresh.setObjectName("pushButton_find_refresh")
+        self.horizontalLayout.addWidget(self.pushButton_find_refresh)
         self.label_2 = QtWidgets.QLabel(self.verticalFrame1)
         self.label_2.setMinimumSize(QtCore.QSize(0, 45))
         self.label_2.setMaximumSize(QtCore.QSize(16777215, 45))

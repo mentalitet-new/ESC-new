@@ -983,7 +983,7 @@ QPushButton:pressed {
                      <number>0</number>
                     </property>
                     <item>
-                     <widget class="QPushButton" name="pushButton_find_camera_3">
+                     <widget class="QPushButton" name="pushButton_find_stop">
                       <property name="minimumSize">
                        <size>
                         <width>80</width>
@@ -1034,7 +1034,7 @@ QPushButton:pressed {
                      </widget>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="pushButton_find_camera_2">
+                     <widget class="QPushButton" name="pushButton_find_refresh">
                       <property name="minimumSize">
                        <size>
                         <width>80</width>
