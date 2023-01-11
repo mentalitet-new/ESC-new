@@ -66,8 +66,6 @@ class Ui_MainWindow(object):
         self.pushButton_min_window.setMinimumSize(QtCore.QSize(25, 25))
         self.pushButton_min_window.setMaximumSize(QtCore.QSize(25, 25))
         self.pushButton_min_window.setStyleSheet("QPushButton {\n"
-"    spacing: 3px;           \n"
-"    padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
 "}\n"
@@ -107,8 +105,6 @@ class Ui_MainWindow(object):
         self.pushButton_close_window.setMinimumSize(QtCore.QSize(25, 25))
         self.pushButton_close_window.setMaximumSize(QtCore.QSize(25, 25))
         self.pushButton_close_window.setStyleSheet("QPushButton {\n"
-"    spacing: 3px;           \n"
-"    padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
 "}\n"
@@ -165,8 +161,6 @@ class Ui_MainWindow(object):
         self.pushButton_find_camera.setMinimumSize(QtCore.QSize(80, 45))
         self.pushButton_find_camera.setMaximumSize(QtCore.QSize(80, 45))
         self.pushButton_find_camera.setStyleSheet("QPushButton {\n"
-"    spacing: 3px;           \n"
-"    padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
 "}\n"
@@ -189,7 +183,7 @@ class Ui_MainWindow(object):
         icon2.addPixmap(QtGui.QPixmap("icon/8666693_search_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_find_camera.setIcon(icon2)
         self.pushButton_find_camera.setIconSize(QtCore.QSize(45, 45))
-        self.pushButton_find_camera.setDefault(True)
+        self.pushButton_find_camera.setDefault(False)
         self.pushButton_find_camera.setFlat(True)
         self.pushButton_find_camera.setObjectName("pushButton_find_camera")
         self.verticalLayout_7.addWidget(self.pushButton_find_camera)
@@ -207,8 +201,6 @@ class Ui_MainWindow(object):
         self.pushButton_add_camera.setMinimumSize(QtCore.QSize(80, 45))
         self.pushButton_add_camera.setMaximumSize(QtCore.QSize(80, 45))
         self.pushButton_add_camera.setStyleSheet("QPushButton {\n"
-"    spacing: 3px;           \n"
-"    padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
 "\n"
@@ -252,8 +244,6 @@ class Ui_MainWindow(object):
         self.pushButton_play.setToolTip("")
         self.pushButton_play.setWhatsThis("")
         self.pushButton_play.setStyleSheet("QPushButton {\n"
-"    spacing: 3px;           \n"
-"     padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
 "}\n"
@@ -296,8 +286,6 @@ class Ui_MainWindow(object):
         self.pushButton_login.setToolTip("")
         self.pushButton_login.setWhatsThis("")
         self.pushButton_login.setStyleSheet("QPushButton {\n"
-"    spacing: 3px;           \n"
-"     padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
 "}\n"
@@ -354,11 +342,8 @@ class Ui_MainWindow(object):
         self.pushButton_info.setMinimumSize(QtCore.QSize(80, 45))
         self.pushButton_info.setMaximumSize(QtCore.QSize(80, 45))
         self.pushButton_info.setStyleSheet("QPushButton {\n"
-"    spacing: 3px;           \n"
-"    padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
 "    color: rgb(0,0,0);\n"
-"\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(255, 142, 119);\n"
