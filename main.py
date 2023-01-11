@@ -1,9 +1,10 @@
 import sys
 
-from PyQt5 import QtWidgets
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QMainWindow, QApplication, QStyleFactory, QSizeGrip
+from PyQt5 import QtWidgets, QtCore
+from PyQt5.QtCore import Qt, pyqtSlot
+from PyQt5.QtWidgets import QMainWindow, QApplication, QStyleFactory, QSizeGrip, QMenu
 
+from Threads.ThreadsClass import ThSort, ThLastRecord, ThStarter
 from ui_main import Ui_MainWindow
 
 
@@ -14,11 +15,13 @@ class MainFrame(QMainWindow):
         self.ui.setupUi(self)
         applicationName = "App Name"
         self.ui.label_top.setText(applicationName)
-
+        self.ui.tableWidget_search_camera.installEventFilter(self)
+        self.ui.pushButton_find_camera.clicked.connect(self.start_camera_search)
         self.setWindowFlags(Qt.FramelessWindowHint)
         # self.setAttribute(Qt.WA_TranslucentBackground)
 
         self.dragPos = self.pos()
+
 
         def moveWindow(event):
             if event.buttons() == Qt.LeftButton:
@@ -29,7 +32,6 @@ class MainFrame(QMainWindow):
         self.ui.verticalFrame_top.mouseMoveEvent = moveWindow
 
         self.row_counter = 0
-        self.print_test_text()
         self.init_columns_table()
         self.sizegrip = QSizeGrip(self.ui.lable_resize)
 
@@ -51,17 +53,55 @@ class MainFrame(QMainWindow):
         self.ui.tableWidget_search_camera.horizontalHeader().setDefaultSectionSize(140)
         self.ui.tableWidget_search_camera.horizontalHeader().setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
 
-    def print_test_text(self):
-        self.ui.tableWidget_search_camera.setRowCount(self.row_counter)
-        self.ui.tableWidget_search_camera.insertRow(self.row_counter)
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 0, QtWidgets.QTableWidgetItem("APix"))
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 1, QtWidgets.QTableWidgetItem("12d"))
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 2, QtWidgets.QTableWidgetItem("123"))
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 3, QtWidgets.QTableWidgetItem("12333"))
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 4, QtWidgets.QTableWidgetItem("123"))
-
     def mousePressEvent(self, event):
         self.dragPos = event.globalPos()
+
+    def start_camera_search(self):
+        """
+        Запуск поиска камер
+        """
+        search = ThStarter(self)
+        search.thread_signal.connect(self.print_table)
+        search.start()
+
+    @pyqtSlot(list)
+    def print_table(self, li):
+        """
+        Вывод в таблицу найденных камер
+        """
+        row_counter = 0
+        for x in li:
+            self.ui.tableWidget_search_camera.setRowCount(row_counter)
+            self.ui.tableWidget_search_camera.insertRow(row_counter)
+            for item in range(5):
+                self.ui.tableWidget_search_camera.setItem(row_counter, item, QtWidgets.QTableWidgetItem(x[item]))
+            row_counter += 1
+
+    def eventFilter(self, source, event):
+        """
+        Обработчик нажатия правой кнопки мыши
+        """
+        if (event.type() == QtCore.QEvent.ContextMenu and
+                source is self.ui.tableWidget_search_camera):
+
+            context_menu = QMenu(self)
+            last_record = context_menu.addAction('Ранее найденые камеры')
+            submenu = QMenu(context_menu)
+            submenu.setTitle("Сортировка")
+            sort_by_name = submenu.addAction("По IP адресу")
+            context_menu.addMenu(submenu)
+            action = context_menu.exec_(event.globalPos())
+
+            if action == last_record:
+                sort = ThLastRecord()
+                sort.thread_signal.connect(self.print_table)
+                sort.run()
+            elif action == sort_by_name:
+                sort = ThSort()
+                sort.thread_signal.connect(self.print_table)
+                sort.run()
+            return True
+        return super(MainFrame, self).eventFilter(source, event)
 
 
 
