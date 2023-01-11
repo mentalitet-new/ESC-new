@@ -174,8 +174,6 @@ background-color: rgb(130,130,130);
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
-    spacing: 3px;           
-    padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
 }
@@ -264,8 +262,6 @@ QPushButton:disabled {
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
-    spacing: 3px;           
-    padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
 }
@@ -411,8 +407,6 @@ QPushButton:disabled {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
-    spacing: 3px;           
-    padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
 }
@@ -445,7 +439,7 @@ QPushButton:disabled {
                 </size>
                </property>
                <property name="default">
-                <bool>true</bool>
+                <bool>false</bool>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -504,8 +498,6 @@ QPushButton:disabled {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
-    spacing: 3px;           
-    padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
 
@@ -604,8 +596,6 @@ QPushButton:disabled {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
-    spacing: 3px;           
-	 padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
 }
@@ -703,8 +693,6 @@ QPushButton:disabled {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
-    spacing: 3px;           
-	 padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
 }
@@ -841,11 +829,8 @@ QPushButton:disabled {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
-    spacing: 3px;           
-    padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
