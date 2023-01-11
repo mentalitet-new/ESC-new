@@ -17,7 +17,8 @@ class MainFrame(QMainWindow):
 
         self.setWindowFlags(Qt.FramelessWindowHint)
         # self.setAttribute(Qt.WA_TranslucentBackground)
-
+        self.ui.pushButton_info.clicked.connect(lambda: self.swap_menu(1, True))
+        self.ui.pushButton_find_camera.clicked.connect(lambda: self.swap_menu(2, True))
         self.dragPos = self.pos()
 
         def moveWindow(event):
@@ -32,6 +33,13 @@ class MainFrame(QMainWindow):
         self.print_test_text()
         self.init_columns_table()
         self.sizegrip = QSizeGrip(self.ui.lable_resize)
+
+    def swap_menu(self, number_stack_wdgt, clicked):
+        if clicked:
+            if number_stack_wdgt == 2:
+                self.ui.stackedWidget.setCurrentWidget(self.ui.page_table)
+            elif number_stack_wdgt == 1:
+                self.ui.stackedWidget.setCurrentWidget(self.ui.page_info)
 
     def init_columns_table(self):
         """
@@ -50,15 +58,6 @@ class MainFrame(QMainWindow):
         self.ui.tableWidget_search_camera.horizontalHeader().setSectionResizeMode(3, QtWidgets.QHeaderView.Fixed)
         self.ui.tableWidget_search_camera.horizontalHeader().setDefaultSectionSize(140)
         self.ui.tableWidget_search_camera.horizontalHeader().setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
-
-    def print_test_text(self):
-        self.ui.tableWidget_search_camera.setRowCount(self.row_counter)
-        self.ui.tableWidget_search_camera.insertRow(self.row_counter)
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 0, QtWidgets.QTableWidgetItem("APix"))
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 1, QtWidgets.QTableWidgetItem("12d"))
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 2, QtWidgets.QTableWidgetItem("123"))
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 3, QtWidgets.QTableWidgetItem("12333"))
-        self.ui.tableWidget_search_camera.setItem(self.row_counter, 4, QtWidgets.QTableWidgetItem("123"))
 
     def mousePressEvent(self, event):
         self.dragPos = event.globalPos()

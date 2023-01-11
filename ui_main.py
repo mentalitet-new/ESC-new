@@ -288,15 +288,15 @@ class Ui_MainWindow(object):
         self.pushButton_login.setObjectName("pushButton_login")
         self.verticalLayout_5.addWidget(self.pushButton_login)
         self.verticalLayout_11.addWidget(self.vertical_button_1)
-        self.verticalFrame = QtWidgets.QFrame(self.frame_button_right)
-        self.verticalFrame.setMinimumSize(QtCore.QSize(80, 0))
-        self.verticalFrame.setMaximumSize(QtCore.QSize(80, 16777215))
-        self.verticalFrame.setObjectName("verticalFrame")
-        self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.verticalFrame)
+        self.verticalFrame_1 = QtWidgets.QFrame(self.frame_button_right)
+        self.verticalFrame_1.setMinimumSize(QtCore.QSize(80, 0))
+        self.verticalFrame_1.setMaximumSize(QtCore.QSize(80, 16777215))
+        self.verticalFrame_1.setObjectName("verticalFrame_1")
+        self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.verticalFrame_1)
         self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_9.setSpacing(0)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
-        self.label_right = QtWidgets.QLabel(self.verticalFrame)
+        self.label_right = QtWidgets.QLabel(self.verticalFrame_1)
         self.label_right.setMaximumSize(QtCore.QSize(80, 16777215))
         self.label_right.setStyleSheet("QLabel {\n"
 "    background-color: rgb(150,150,150);\n"
@@ -304,7 +304,7 @@ class Ui_MainWindow(object):
         self.label_right.setText("")
         self.label_right.setObjectName("label_right")
         self.verticalLayout_9.addWidget(self.label_right)
-        self.verticalLayout_11.addWidget(self.verticalFrame)
+        self.verticalLayout_11.addWidget(self.verticalFrame_1)
         self.vertical_button_2 = QtWidgets.QFrame(self.frame_button_right)
         self.vertical_button_2.setMinimumSize(QtCore.QSize(80, 0))
         self.vertical_button_2.setMaximumSize(QtCore.QSize(80, 45))
@@ -340,15 +340,15 @@ class Ui_MainWindow(object):
         self.pushButton_info.setObjectName("pushButton_info")
         self.verticalLayout_6.addWidget(self.pushButton_info)
         self.verticalLayout_11.addWidget(self.vertical_button_2)
-        self.verticalFrame1 = QtWidgets.QFrame(self.frame_button_right)
-        self.verticalFrame1.setMaximumSize(QtCore.QSize(80, 20))
-        self.verticalFrame1.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.verticalFrame1.setObjectName("verticalFrame1")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalFrame1)
+        self.verticalFrame = QtWidgets.QFrame(self.frame_button_right)
+        self.verticalFrame.setMaximumSize(QtCore.QSize(80, 20))
+        self.verticalFrame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.verticalFrame.setObjectName("verticalFrame")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalFrame)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.label_right_1 = QtWidgets.QLabel(self.verticalFrame1)
+        self.label_right_1 = QtWidgets.QLabel(self.verticalFrame)
         self.label_right_1.setMaximumSize(QtCore.QSize(80, 20))
         self.label_right_1.setStyleSheet("QLabel {\n"
 "    background-color: rgb(150,150,150);\n"
@@ -356,7 +356,7 @@ class Ui_MainWindow(object):
         self.label_right_1.setText("")
         self.label_right_1.setObjectName("label_right_1")
         self.verticalLayout.addWidget(self.label_right_1)
-        self.verticalLayout_11.addWidget(self.verticalFrame1)
+        self.verticalLayout_11.addWidget(self.verticalFrame)
         self.horizontalLayout_3.addWidget(self.frame_button_right)
         self.see_frame = QtWidgets.QFrame(self.verticalFrame_bot)
         self.see_frame.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -371,7 +371,82 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName("verticalLayout_4")
-        self.tableWidget_search_camera = QtWidgets.QTableWidget(self.main_table_frame)
+        self.stackedWidget = QtWidgets.QStackedWidget(self.main_table_frame)
+        self.stackedWidget.setObjectName("stackedWidget")
+        self.page_table = QtWidgets.QWidget()
+        self.page_table.setObjectName("page_table")
+        self.verticalLayout_12 = QtWidgets.QVBoxLayout(self.page_table)
+        self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_12.setSpacing(0)
+        self.verticalLayout_12.setObjectName("verticalLayout_12")
+        self.verticalFrame1 = QtWidgets.QFrame(self.page_table)
+        self.verticalFrame1.setMinimumSize(QtCore.QSize(0, 45))
+        self.verticalFrame1.setMaximumSize(QtCore.QSize(16777215, 45))
+        self.verticalFrame1.setObjectName("verticalFrame1")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.verticalFrame1)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.pushButton_find_camera_3 = QtWidgets.QPushButton(self.verticalFrame1)
+        self.pushButton_find_camera_3.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_camera_3.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_camera_3.setStyleSheet("QPushButton {\n"
+"    background-color: rgb(190,190,190);\n"
+"    color: rgb(0,0,0);\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(255, 142, 119);\n"
+"    border-radius: 3px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    border: 3px solid rgb(85, 165, 127);\n"
+"    background-color: rgb(85, 170, 127);\n"
+"    color: rgb(0,0,0);  \n"
+"    border-radius: 3px;\n"
+"}")
+        self.pushButton_find_camera_3.setText("")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap("icon/8666761_square_shape_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_find_camera_3.setIcon(icon7)
+        self.pushButton_find_camera_3.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_find_camera_3.setDefault(False)
+        self.pushButton_find_camera_3.setFlat(True)
+        self.pushButton_find_camera_3.setObjectName("pushButton_find_camera_3")
+        self.horizontalLayout.addWidget(self.pushButton_find_camera_3)
+        self.pushButton_find_camera_2 = QtWidgets.QPushButton(self.verticalFrame1)
+        self.pushButton_find_camera_2.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_camera_2.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_camera_2.setStyleSheet("QPushButton {\n"
+"    background-color: rgb(190,190,190);\n"
+"    color: rgb(0,0,0);\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(255, 142, 119);\n"
+"    border-radius: 3px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    border: 3px solid rgb(85, 165, 127);\n"
+"    background-color: rgb(85, 170, 127);\n"
+"    color: rgb(0,0,0);  \n"
+"    border-radius: 3px;\n"
+"}")
+        self.pushButton_find_camera_2.setText("")
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap("icon/refresh_cw_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_find_camera_2.setIcon(icon8)
+        self.pushButton_find_camera_2.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_find_camera_2.setDefault(False)
+        self.pushButton_find_camera_2.setFlat(True)
+        self.pushButton_find_camera_2.setObjectName("pushButton_find_camera_2")
+        self.horizontalLayout.addWidget(self.pushButton_find_camera_2)
+        self.label_2 = QtWidgets.QLabel(self.verticalFrame1)
+        self.label_2.setMinimumSize(QtCore.QSize(0, 45))
+        self.label_2.setMaximumSize(QtCore.QSize(16777215, 45))
+        self.label_2.setText("")
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout.addWidget(self.label_2)
+        self.verticalLayout_12.addWidget(self.verticalFrame1)
+        self.tableWidget_search_camera = QtWidgets.QTableWidget(self.page_table)
         self.tableWidget_search_camera.setEnabled(True)
         self.tableWidget_search_camera.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.tableWidget_search_camera.setLayoutDirection(QtCore.Qt.LeftToRight)
@@ -410,7 +485,18 @@ class Ui_MainWindow(object):
         self.tableWidget_search_camera.horizontalHeader().setSortIndicatorShown(True)
         self.tableWidget_search_camera.verticalHeader().setVisible(False)
         self.tableWidget_search_camera.verticalHeader().setSortIndicatorShown(False)
-        self.verticalLayout_4.addWidget(self.tableWidget_search_camera)
+        self.verticalLayout_12.addWidget(self.tableWidget_search_camera)
+        self.stackedWidget.addWidget(self.page_table)
+        self.page_info = QtWidgets.QWidget()
+        self.page_info.setObjectName("page_info")
+        self.verticalLayout_13 = QtWidgets.QVBoxLayout(self.page_info)
+        self.verticalLayout_13.setObjectName("verticalLayout_13")
+        self.label = QtWidgets.QLabel(self.page_info)
+        self.label.setAutoFillBackground(True)
+        self.label.setObjectName("label")
+        self.verticalLayout_13.addWidget(self.label)
+        self.stackedWidget.addWidget(self.page_info)
+        self.verticalLayout_4.addWidget(self.stackedWidget)
         self.verticalLayout_3.addWidget(self.main_table_frame)
         self.low_bot = QtWidgets.QFrame(self.see_frame)
         self.low_bot.setMinimumSize(QtCore.QSize(0, 20))
@@ -473,3 +559,4 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "Маска"))
         item = self.tableWidget_search_camera.horizontalHeaderItem(4)
         item.setText(_translate("MainWindow", "Прошивка"))
+        self.label.setText(_translate("MainWindow", "hjmcvvvvvvvvvvvvvvvvvvvvbm"))
