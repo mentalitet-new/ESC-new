@@ -16,7 +16,7 @@ class MainFrame(QMainWindow):
         applicationName = "App Name"
         self.ui.label_top.setText(applicationName)
         self.ui.tableWidget_search_camera.installEventFilter(self)
-        self.ui.pushButton_find_camera.clicked.connect(self.start_camera_search)
+        self.ui.pushButton_find_refresh.clicked.connect(self.start_camera_search)
         self.setWindowFlags(Qt.FramelessWindowHint)
         # self.setAttribute(Qt.WA_TranslucentBackground)
         self.ui.pushButton_info.clicked.connect(lambda: self.swap_menu(1, True))
