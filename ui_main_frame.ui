@@ -19,7 +19,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget {
-background-color: rgb(110,110,110);
+background-color: rgb(130,130,130);
 }</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -43,13 +43,13 @@ background-color: rgb(110,110,110);
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>45</height>
+        <height>25</height>
        </size>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Sunken</enum>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
        <property name="spacing">
         <number>0</number>
        </property>
@@ -70,8 +70,11 @@ background-color: rgb(110,110,110);
          <property name="maximumSize">
           <size>
            <width>16777215</width>
-           <height>45</height>
+           <height>25</height>
           </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
@@ -94,24 +97,21 @@ background-color: rgb(110,110,110);
           </property>
           <item>
            <widget class="QLabel" name="label_top">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
               <width>16777215</width>
-              <height>45</height>
+              <height>25</height>
              </size>
             </property>
             <property name="styleSheet">
              <string notr="true">QLabel {
-background-color: rgb(77,77,77);
-    spacing: 3px;           
-    padding: 5px 10px;
-    color: rgb(0,0,0);  
-}
-QLabel:pressed {
-	border: 2px solid green;
-    background-color: rgb(85, 170, 127);
-    color: rgb(0,0,0);  
-    border-radius: 5px;
+    background-color: rgb(150,150,150);
 }</string>
             </property>
             <property name="frameShadow">
@@ -127,10 +127,16 @@ QLabel:pressed {
        </item>
        <item>
         <widget class="QFrame" name="frame_close">
+         <property name="minimumSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
          <property name="maximumSize">
           <size>
-           <width>45</width>
-           <height>45</height>
+           <width>25</width>
+           <height>25</height>
           </size>
          </property>
          <property name="frameShadow">
@@ -154,10 +160,16 @@ QLabel:pressed {
           </property>
           <item>
            <widget class="QPushButton" name="pushButton_min_window">
+            <property name="minimumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
-              <width>45</width>
-              <height>45</height>
+              <width>25</width>
+              <height>25</height>
              </size>
             </property>
             <property name="styleSheet">
@@ -166,14 +178,13 @@ QLabel:pressed {
     padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
-	border-radius: 3px;
+	border-radius: 2px;
 }
 QPushButton:pressed {
-	border: 2px solid green;
+	border: 3px solid rgb(85, 165, 127);
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 2px;
@@ -188,7 +199,13 @@ QPushButton:disabled {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>icon/min.png</normaloff>icon/min.png</iconset>
+              <normaloff>icon/8666554_minus_square_icon.png</normaloff>icon/8666554_minus_square_icon.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
             </property>
             <property name="flat">
              <bool>true</bool>
@@ -200,10 +217,16 @@ QPushButton:disabled {
        </item>
        <item>
         <widget class="QFrame" name="frame_min">
+         <property name="minimumSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
          <property name="maximumSize">
           <size>
-           <width>45</width>
-           <height>45</height>
+           <width>25</width>
+           <height>25</height>
           </size>
          </property>
          <property name="frameShadow">
@@ -227,10 +250,16 @@ QPushButton:disabled {
           </property>
           <item>
            <widget class="QPushButton" name="pushButton_close_window">
+            <property name="minimumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
-              <width>45</width>
-              <height>45</height>
+              <width>25</width>
+              <height>25</height>
              </size>
             </property>
             <property name="styleSheet">
@@ -239,14 +268,13 @@ QPushButton:disabled {
     padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
-	border-radius: 3px;
+	border-radius: 2px;
 }
 QPushButton:pressed {
-	border: 2px solid green;
+	border: 3px solid rgb(85, 165, 127);
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
     border-radius: 2px;
@@ -261,7 +289,13 @@ QPushButton:disabled {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>icon/exit.png</normaloff>icon/exit.png</iconset>
+              <normaloff>icon/8666744_x_square_icon.png</normaloff>icon/8666744_x_square_icon.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>20</height>
+             </size>
             </property>
             <property name="flat">
              <bool>true</bool>
@@ -299,20 +333,20 @@ QPushButton:disabled {
         <widget class="QFrame" name="button_right">
          <property name="minimumSize">
           <size>
-           <width>0</width>
+           <width>80</width>
            <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>45</width>
+           <width>80</width>
            <height>16777215</height>
           </size>
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_10">
+         <layout class="QVBoxLayout" name="verticalLayout">
           <property name="spacing">
            <number>0</number>
           </property>
@@ -330,9 +364,15 @@ QPushButton:disabled {
           </property>
           <item>
            <widget class="QFrame" name="vertical_button_3">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
-              <width>45</width>
+              <width>80</width>
               <height>45</height>
              </size>
             </property>
@@ -359,13 +399,13 @@ QPushButton:disabled {
               <widget class="QPushButton" name="pushButton_A">
                <property name="minimumSize">
                 <size>
-                 <width>45</width>
+                 <width>80</width>
                  <height>45</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>45</width>
+                 <width>80</width>
                  <height>45</height>
                 </size>
                </property>
@@ -375,17 +415,16 @@ QPushButton:disabled {
     padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
-	border-radius: 2px;
+	border-radius: 3px;
 }
 QPushButton:pressed {
-	border: 2px solid green;
+	border: 3px solid rgb(85, 165, 127);
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 2px;
+    border-radius: 3px;
 }
 QPushButton:disabled {
 	background-color: rgb(220,220,220,);
@@ -393,7 +432,20 @@ QPushButton:disabled {
 }</string>
                </property>
                <property name="text">
-                <string>A</string>
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/refresh_cw_icon.png</normaloff>icon/refresh_cw_icon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>45</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="default">
+                <bool>true</bool>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -405,9 +457,15 @@ QPushButton:disabled {
           </item>
           <item>
            <widget class="QFrame" name="vertical_button_2">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
-              <width>45</width>
+              <width>80</width>
               <height>45</height>
              </size>
             </property>
@@ -434,13 +492,13 @@ QPushButton:disabled {
               <widget class="QPushButton" name="pushButton_B">
                <property name="minimumSize">
                 <size>
-                 <width>45</width>
+                 <width>80</width>
                  <height>45</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>45</width>
+                 <width>80</width>
                  <height>45</height>
                 </size>
                </property>
@@ -450,17 +508,17 @@ QPushButton:disabled {
     padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	border: 2px solid rgb(77,77,77);
+
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
 	border-radius: 3px;
 }
 QPushButton:pressed {
-	border: 2px solid green;
+	border: 3px solid rgb(85, 165, 127);
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 2px;
+    border-radius: 3px;
 }
 QPushButton:disabled {
 	background-color: rgb(220,220,220,);
@@ -468,7 +526,17 @@ QPushButton:disabled {
 }</string>
                </property>
                <property name="text">
-                <string>B</string>
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/info_information_icon.png</normaloff>icon/info_information_icon.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>45</width>
+                 <height>45</height>
+                </size>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -480,9 +548,15 @@ QPushButton:disabled {
           </item>
           <item>
            <widget class="QFrame" name="vertical_button_1">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
-              <width>45</width>
+              <width>80</width>
               <height>45</height>
              </size>
             </property>
@@ -509,13 +583,13 @@ QPushButton:disabled {
               <widget class="QPushButton" name="pushButton_C">
                <property name="minimumSize">
                 <size>
-                 <width>45</width>
+                 <width>80</width>
                  <height>45</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>45</width>
+                 <width>80</width>
                  <height>45</height>
                 </size>
                </property>
@@ -525,17 +599,16 @@ QPushButton:disabled {
 	 padding: 5px 10px;
     background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	 border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
 	border-radius: 3px;
 }
 QPushButton:pressed {
-	 border: 2px solid green;
+	 border: 3px solid rgb(85, 165, 127);
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 2px;
+    border-radius: 3px;
 }
 QPushButton:disabled {
 	background-color: rgb(220,220,220,);
@@ -543,7 +616,17 @@ QPushButton:disabled {
 }</string>
                </property>
                <property name="text">
-                <string>C</string>
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>icon/free-icon-laundry-9137873.png</normaloff>icon/free-icon-laundry-9137873.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -555,9 +638,15 @@ QPushButton:disabled {
           </item>
           <item>
            <widget class="QFrame" name="verticalFrame">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>0</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
-              <width>45</width>
+              <width>80</width>
               <height>16777215</height>
              </size>
             </property>
@@ -581,9 +670,14 @@ QPushButton:disabled {
               <widget class="QLabel" name="label_3">
                <property name="maximumSize">
                 <size>
-                 <width>45</width>
+                 <width>80</width>
                  <height>16777215</height>
                 </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    background-color: rgb(150,150,150);
+}</string>
                </property>
                <property name="text">
                 <string/>
@@ -645,6 +739,9 @@ QPushButton:disabled {
                </property>
                <property name="layoutDirection">
                 <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
                </property>
                <property name="styleSheet">
                 <string notr="true">QTableWidget {
@@ -761,6 +858,11 @@ QTableWidget:pressed {
                  <width>16777215</width>
                  <height>20</height>
                 </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame {
+    background-color: rgb(150,150,150);
+}</string>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
