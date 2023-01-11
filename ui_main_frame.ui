@@ -19,7 +19,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget {
-background-color: rgb(173,173,173);
+background-color: rgb(110,110,110);
 }</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -102,7 +102,7 @@ background-color: rgb(173,173,173);
             </property>
             <property name="styleSheet">
              <string notr="true">QLabel {
-background-color: rgb(173,173,173);
+background-color: rgb(77,77,77);
     spacing: 3px;           
     padding: 5px 10px;
     color: rgb(0,0,0);  
@@ -162,22 +162,21 @@ QLabel:pressed {
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
-background-color: rgb(173,173,173);
     spacing: 3px;           
     padding: 5px 10px;
-    background-color: rgb(173,173,173);
-    color: rgb(0,0,0); 
- 	border: 2px solid grey;
+    background-color: rgb(190,190,190);
+    color: rgb(0,0,0);
+	border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
-	border-radius: 5px;
+	border-radius: 3px;
 }
 QPushButton:pressed {
 	border: 2px solid green;
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 5px;
+    border-radius: 2px;
 }
 QPushButton:disabled {
 	background-color: rgb(220,220,220,);
@@ -236,22 +235,21 @@ QPushButton:disabled {
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton {
-background-color: rgb(173,173,173);
     spacing: 3px;           
     padding: 5px 10px;
-    background-color: rgb(173,173,173);
+    background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	border: 2px solid grey;
+	border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
-	border-radius: 5px;
+	border-radius: 3px;
 }
 QPushButton:pressed {
 	border: 2px solid green;
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 5px;
+    border-radius: 2px;
 }
 QPushButton:disabled {
 	background-color: rgb(220,220,220,);
@@ -307,7 +305,7 @@ QPushButton:disabled {
          </property>
          <property name="maximumSize">
           <size>
-           <width>55</width>
+           <width>45</width>
            <height>16777215</height>
           </size>
          </property>
@@ -358,7 +356,7 @@ QPushButton:disabled {
               <number>0</number>
              </property>
              <item>
-              <widget class="QPushButton" name="pushButton_3">
+              <widget class="QPushButton" name="pushButton_A">
                <property name="minimumSize">
                 <size>
                  <width>45</width>
@@ -373,22 +371,21 @@ QPushButton:disabled {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
-background-color: rgb(173,173,173);
     spacing: 3px;           
     padding: 5px 10px;
-    background-color: rgb(173,173,173);
+    background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	border: 2px solid grey;
+	border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
-	border-radius: 5px;
+	border-radius: 2px;
 }
 QPushButton:pressed {
 	border: 2px solid green;
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 5px;
+    border-radius: 2px;
 }
 QPushButton:disabled {
 	background-color: rgb(220,220,220,);
@@ -434,7 +431,7 @@ QPushButton:disabled {
               <number>0</number>
              </property>
              <item>
-              <widget class="QPushButton" name="pushButton_2">
+              <widget class="QPushButton" name="pushButton_B">
                <property name="minimumSize">
                 <size>
                  <width>45</width>
@@ -449,22 +446,21 @@ QPushButton:disabled {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
-background-color: rgb(173,173,173);
     spacing: 3px;           
     padding: 5px 10px;
-    background-color: rgb(173,173,173);
+    background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	border: 2px solid grey;
+	border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
-	border-radius: 5px;
+	border-radius: 3px;
 }
 QPushButton:pressed {
 	border: 2px solid green;
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 5px;
+    border-radius: 2px;
 }
 QPushButton:disabled {
 	background-color: rgb(220,220,220,);
@@ -510,7 +506,7 @@ QPushButton:disabled {
               <number>0</number>
              </property>
              <item>
-              <widget class="QPushButton" name="pushButton">
+              <widget class="QPushButton" name="pushButton_C">
                <property name="minimumSize">
                 <size>
                  <width>45</width>
@@ -525,22 +521,21 @@ QPushButton:disabled {
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
-background-color: rgb(173,173,173);
     spacing: 3px;           
-    padding: 5px 10px;
-    background-color: rgb(173,173,173);
+	 padding: 5px 10px;
+    background-color: rgb(190,190,190);
     color: rgb(0,0,0);
-	border: 2px solid grey;
+	 border: 2px solid rgb(77,77,77);
 }
 QPushButton:hover {
 	background-color: rgb(255, 142, 119);
-	border-radius: 5px;
+	border-radius: 3px;
 }
 QPushButton:pressed {
-	border: 2px solid green;
+	 border: 2px solid green;
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 5px;
+    border-radius: 2px;
 }
 QPushButton:disabled {
 	background-color: rgb(220,220,220,);
@@ -559,30 +554,50 @@ QPushButton:disabled {
            </widget>
           </item>
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_9">
-            <property name="spacing">
-             <number>0</number>
+           <widget class="QFrame" name="verticalFrame">
+            <property name="maximumSize">
+             <size>
+              <width>45</width>
+              <height>16777215</height>
+             </size>
             </property>
-            <item>
-             <widget class="QLabel" name="label_3">
-              <property name="maximumSize">
-               <size>
-                <width>45</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-             </widget>
-            </item>
-           </layout>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="maximumSize">
+                <size>
+                 <width>45</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </item>
          </layout>
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="table_frame">
+        <widget class="QFrame" name="see_frame">
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
@@ -634,20 +649,16 @@ QPushButton:disabled {
                <property name="styleSheet">
                 <string notr="true">QTableWidget {
     background-color: rgb(220,220,220);
-    spacing: 3px;           
-    padding: 5px 10px;
     color: rgb(0,0,0);  
-	border: 2px solid grey;
 }
 QTableWidget:pressed {
 	border: 2px solid green;
     background-color: rgb(85, 170, 127);
     color: rgb(0,0,0);  
-    border-radius: 5px;
 }</string>
                </property>
                <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
+                <enum>QFrame::Plain</enum>
                </property>
                <property name="editTriggers">
                 <set>QAbstractItemView::NoEditTriggers</set>
