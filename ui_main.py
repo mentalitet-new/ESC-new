@@ -148,10 +148,10 @@ class Ui_MainWindow(object):
         self.button_right.setMaximumSize(QtCore.QSize(80, 16777215))
         self.button_right.setFrameShadow(QtWidgets.QFrame.Raised)
         self.button_right.setObjectName("button_right")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.button_right)
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout.setSpacing(0)
-        self.verticalLayout.setObjectName("verticalLayout")
+        self.verticalLayout_11 = QtWidgets.QVBoxLayout(self.button_right)
+        self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_11.setSpacing(0)
+        self.verticalLayout_11.setObjectName("verticalLayout_11")
         self.vertical_button_3 = QtWidgets.QFrame(self.button_right)
         self.vertical_button_3.setMinimumSize(QtCore.QSize(80, 0))
         self.vertical_button_3.setMaximumSize(QtCore.QSize(80, 45))
@@ -161,10 +161,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_7.setSpacing(0)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.pushButton_A = QtWidgets.QPushButton(self.vertical_button_3)
-        self.pushButton_A.setMinimumSize(QtCore.QSize(80, 45))
-        self.pushButton_A.setMaximumSize(QtCore.QSize(80, 45))
-        self.pushButton_A.setStyleSheet("QPushButton {\n"
+        self.pushButton_find_camera = QtWidgets.QPushButton(self.vertical_button_3)
+        self.pushButton_find_camera.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_camera.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_find_camera.setStyleSheet("QPushButton {\n"
 "    spacing: 3px;           \n"
 "    padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
@@ -184,29 +184,29 @@ class Ui_MainWindow(object):
 "    background-color: rgb(220,220,220,);\n"
 "    color: rgb(150,150,150,);\n"
 "}")
-        self.pushButton_A.setText("")
+        self.pushButton_find_camera.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("icon/refresh_cw_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_A.setIcon(icon2)
-        self.pushButton_A.setIconSize(QtCore.QSize(45, 45))
-        self.pushButton_A.setDefault(True)
-        self.pushButton_A.setFlat(True)
-        self.pushButton_A.setObjectName("pushButton_A")
-        self.verticalLayout_7.addWidget(self.pushButton_A)
-        self.verticalLayout.addWidget(self.vertical_button_3)
-        self.vertical_button_2 = QtWidgets.QFrame(self.button_right)
-        self.vertical_button_2.setMinimumSize(QtCore.QSize(80, 0))
-        self.vertical_button_2.setMaximumSize(QtCore.QSize(80, 45))
-        self.vertical_button_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.vertical_button_2.setObjectName("vertical_button_2")
-        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.vertical_button_2)
-        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout_6.setSpacing(0)
-        self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.pushButton_B = QtWidgets.QPushButton(self.vertical_button_2)
-        self.pushButton_B.setMinimumSize(QtCore.QSize(80, 45))
-        self.pushButton_B.setMaximumSize(QtCore.QSize(80, 45))
-        self.pushButton_B.setStyleSheet("QPushButton {\n"
+        icon2.addPixmap(QtGui.QPixmap("icon/8666693_search_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_find_camera.setIcon(icon2)
+        self.pushButton_find_camera.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_find_camera.setDefault(True)
+        self.pushButton_find_camera.setFlat(True)
+        self.pushButton_find_camera.setObjectName("pushButton_find_camera")
+        self.verticalLayout_7.addWidget(self.pushButton_find_camera)
+        self.verticalLayout_11.addWidget(self.vertical_button_3)
+        self.vertical_button_5 = QtWidgets.QFrame(self.button_right)
+        self.vertical_button_5.setMinimumSize(QtCore.QSize(80, 0))
+        self.vertical_button_5.setMaximumSize(QtCore.QSize(80, 45))
+        self.vertical_button_5.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.vertical_button_5.setObjectName("vertical_button_5")
+        self.verticalLayout_10 = QtWidgets.QVBoxLayout(self.vertical_button_5)
+        self.verticalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_10.setSpacing(0)
+        self.verticalLayout_10.setObjectName("verticalLayout_10")
+        self.pushButton_add_camera = QtWidgets.QPushButton(self.vertical_button_5)
+        self.pushButton_add_camera.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_add_camera.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_add_camera.setStyleSheet("QPushButton {\n"
 "    spacing: 3px;           \n"
 "    padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
@@ -227,28 +227,31 @@ class Ui_MainWindow(object):
 "    background-color: rgb(220,220,220,);\n"
 "    color: rgb(150,150,150,);\n"
 "}")
-        self.pushButton_B.setText("")
+        self.pushButton_add_camera.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("icon/info_information_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_B.setIcon(icon3)
-        self.pushButton_B.setIconSize(QtCore.QSize(45, 45))
-        self.pushButton_B.setFlat(True)
-        self.pushButton_B.setObjectName("pushButton_B")
-        self.verticalLayout_6.addWidget(self.pushButton_B)
-        self.verticalLayout.addWidget(self.vertical_button_2)
-        self.vertical_button_1 = QtWidgets.QFrame(self.button_right)
-        self.vertical_button_1.setMinimumSize(QtCore.QSize(80, 0))
-        self.vertical_button_1.setMaximumSize(QtCore.QSize(80, 45))
-        self.vertical_button_1.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.vertical_button_1.setObjectName("vertical_button_1")
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.vertical_button_1)
-        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout_5.setSpacing(0)
-        self.verticalLayout_5.setObjectName("verticalLayout_5")
-        self.pushButton_C = QtWidgets.QPushButton(self.vertical_button_1)
-        self.pushButton_C.setMinimumSize(QtCore.QSize(80, 45))
-        self.pushButton_C.setMaximumSize(QtCore.QSize(80, 45))
-        self.pushButton_C.setStyleSheet("QPushButton {\n"
+        icon3.addPixmap(QtGui.QPixmap("icon/8666650_file_plus_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_add_camera.setIcon(icon3)
+        self.pushButton_add_camera.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_add_camera.setFlat(True)
+        self.pushButton_add_camera.setObjectName("pushButton_add_camera")
+        self.verticalLayout_10.addWidget(self.pushButton_add_camera)
+        self.verticalLayout_11.addWidget(self.vertical_button_5)
+        self.vertical_button_4 = QtWidgets.QFrame(self.button_right)
+        self.vertical_button_4.setMinimumSize(QtCore.QSize(80, 0))
+        self.vertical_button_4.setMaximumSize(QtCore.QSize(80, 45))
+        self.vertical_button_4.setToolTip("")
+        self.vertical_button_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.vertical_button_4.setObjectName("vertical_button_4")
+        self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.vertical_button_4)
+        self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_8.setSpacing(0)
+        self.verticalLayout_8.setObjectName("verticalLayout_8")
+        self.pushButton_play = QtWidgets.QPushButton(self.vertical_button_4)
+        self.pushButton_play.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_play.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_play.setToolTip("")
+        self.pushButton_play.setWhatsThis("")
+        self.pushButton_play.setStyleSheet("QPushButton {\n"
 "    spacing: 3px;           \n"
 "     padding: 5px 10px;\n"
 "    background-color: rgb(190,190,190);\n"
@@ -268,24 +271,127 @@ class Ui_MainWindow(object):
 "    background-color: rgb(220,220,220,);\n"
 "    color: rgb(150,150,150,);\n"
 "}")
-        self.pushButton_C.setText("")
+        self.pushButton_play.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("icon/free-icon-laundry-9137873.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_C.setIcon(icon4)
-        self.pushButton_C.setIconSize(QtCore.QSize(32, 32))
-        self.pushButton_C.setFlat(True)
-        self.pushButton_C.setObjectName("pushButton_C")
-        self.verticalLayout_5.addWidget(self.pushButton_C)
-        self.verticalLayout.addWidget(self.vertical_button_1)
+        icon4.addPixmap(QtGui.QPixmap("icon/8666551_play_circle_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_play.setIcon(icon4)
+        self.pushButton_play.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_play.setFlat(True)
+        self.pushButton_play.setObjectName("pushButton_play")
+        self.verticalLayout_8.addWidget(self.pushButton_play)
+        self.verticalLayout_11.addWidget(self.vertical_button_4)
+        self.vertical_button_1 = QtWidgets.QFrame(self.button_right)
+        self.vertical_button_1.setMinimumSize(QtCore.QSize(80, 0))
+        self.vertical_button_1.setMaximumSize(QtCore.QSize(80, 45))
+        self.vertical_button_1.setToolTip("")
+        self.vertical_button_1.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.vertical_button_1.setObjectName("vertical_button_1")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.vertical_button_1)
+        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_5.setSpacing(0)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.pushButton_login = QtWidgets.QPushButton(self.vertical_button_1)
+        self.pushButton_login.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_login.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_login.setToolTip("")
+        self.pushButton_login.setWhatsThis("")
+        self.pushButton_login.setStyleSheet("QPushButton {\n"
+"    spacing: 3px;           \n"
+"     padding: 5px 10px;\n"
+"    background-color: rgb(190,190,190);\n"
+"    color: rgb(0,0,0);\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(255, 142, 119);\n"
+"    border-radius: 3px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"     border: 3px solid rgb(85, 165, 127);\n"
+"    background-color: rgb(85, 170, 127);\n"
+"    color: rgb(0,0,0);  \n"
+"    border-radius: 3px;\n"
+"}\n"
+"QPushButton:disabled {\n"
+"    background-color: rgb(220,220,220,);\n"
+"    color: rgb(150,150,150,);\n"
+"}")
+        self.pushButton_login.setText("")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("icon/8666628_user_check_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_login.setIcon(icon5)
+        self.pushButton_login.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_login.setFlat(True)
+        self.pushButton_login.setObjectName("pushButton_login")
+        self.verticalLayout_5.addWidget(self.pushButton_login)
+        self.verticalLayout_11.addWidget(self.vertical_button_1)
         self.verticalFrame = QtWidgets.QFrame(self.button_right)
-        self.verticalFrame.setMinimumSize(QtCore.QSize(80, 0))
-        self.verticalFrame.setMaximumSize(QtCore.QSize(80, 16777215))
+        self.verticalFrame.setMaximumSize(QtCore.QSize(80, 20))
+        self.verticalFrame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.verticalFrame.setObjectName("verticalFrame")
-        self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.verticalFrame)
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalFrame)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setSpacing(0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.label_4 = QtWidgets.QLabel(self.verticalFrame)
+        self.label_4.setMaximumSize(QtCore.QSize(80, 20))
+        self.label_4.setStyleSheet("QLabel {\n"
+"    background-color: rgb(150,150,150);\n"
+"}")
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.verticalLayout.addWidget(self.label_4)
+        self.verticalLayout_11.addWidget(self.verticalFrame)
+        self.vertical_button_2 = QtWidgets.QFrame(self.button_right)
+        self.vertical_button_2.setMinimumSize(QtCore.QSize(80, 0))
+        self.vertical_button_2.setMaximumSize(QtCore.QSize(80, 45))
+        self.vertical_button_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.vertical_button_2.setObjectName("vertical_button_2")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.vertical_button_2)
+        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_6.setSpacing(0)
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.pushButton_info = QtWidgets.QPushButton(self.vertical_button_2)
+        self.pushButton_info.setMinimumSize(QtCore.QSize(80, 45))
+        self.pushButton_info.setMaximumSize(QtCore.QSize(80, 45))
+        self.pushButton_info.setStyleSheet("QPushButton {\n"
+"    spacing: 3px;           \n"
+"    padding: 5px 10px;\n"
+"    background-color: rgb(190,190,190);\n"
+"    color: rgb(0,0,0);\n"
+"\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(255, 142, 119);\n"
+"    border-radius: 3px;\n"
+"}\n"
+"QPushButton:pressed {\n"
+"    border: 3px solid rgb(85, 165, 127);\n"
+"    background-color: rgb(85, 170, 127);\n"
+"    color: rgb(0,0,0);  \n"
+"    border-radius: 3px;\n"
+"}\n"
+"QPushButton:disabled {\n"
+"    background-color: rgb(220,220,220,);\n"
+"    color: rgb(150,150,150,);\n"
+"}")
+        self.pushButton_info.setText("")
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("icon/8666788_info_information_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_info.setIcon(icon6)
+        self.pushButton_info.setIconSize(QtCore.QSize(45, 45))
+        self.pushButton_info.setFlat(True)
+        self.pushButton_info.setObjectName("pushButton_info")
+        self.verticalLayout_6.addWidget(self.pushButton_info)
+        self.verticalLayout_11.addWidget(self.vertical_button_2)
+        self.verticalFrame1 = QtWidgets.QFrame(self.button_right)
+        self.verticalFrame1.setMinimumSize(QtCore.QSize(80, 0))
+        self.verticalFrame1.setMaximumSize(QtCore.QSize(80, 16777215))
+        self.verticalFrame1.setObjectName("verticalFrame1")
+        self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.verticalFrame1)
         self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_9.setSpacing(0)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
-        self.label_3 = QtWidgets.QLabel(self.verticalFrame)
+        self.label_3 = QtWidgets.QLabel(self.verticalFrame1)
         self.label_3.setMaximumSize(QtCore.QSize(80, 16777215))
         self.label_3.setStyleSheet("QLabel {\n"
 "    background-color: rgb(150,150,150);\n"
@@ -293,7 +399,7 @@ class Ui_MainWindow(object):
         self.label_3.setText("")
         self.label_3.setObjectName("label_3")
         self.verticalLayout_9.addWidget(self.label_3)
-        self.verticalLayout.addWidget(self.verticalFrame)
+        self.verticalLayout_11.addWidget(self.verticalFrame1)
         self.horizontalLayout_3.addWidget(self.button_right)
         self.see_frame = QtWidgets.QFrame(self.verticalFrame_bot)
         self.see_frame.setFrameShadow(QtWidgets.QFrame.Raised)
