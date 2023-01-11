@@ -318,7 +318,7 @@ QPushButton:pressed {
         <number>0</number>
        </property>
        <item>
-        <widget class="QFrame" name="button_right">
+        <widget class="QFrame" name="frame_button_right">
          <property name="minimumSize">
           <size>
            <width>80</width>
@@ -739,7 +739,7 @@ QPushButton:pressed {
               <number>0</number>
              </property>
              <item>
-              <widget class="QLabel" name="label_3">
+              <widget class="QLabel" name="label_right">
                <property name="maximumSize">
                 <size>
                  <width>80</width>
@@ -871,7 +871,7 @@ QPushButton:pressed {
               <number>0</number>
              </property>
              <item>
-              <widget class="QLabel" name="label_4">
+              <widget class="QLabel" name="label_right_1">
                <property name="maximumSize">
                 <size>
                  <width>80</width>
@@ -916,7 +916,7 @@ QPushButton:pressed {
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="tb_frame">
+           <widget class="QFrame" name="main_table_frame">
             <layout class="QVBoxLayout" name="verticalLayout_4">
              <property name="spacing">
               <number>0</number>
@@ -1091,7 +1091,7 @@ QTableWidget:pressed {
               </widget>
              </item>
              <item>
-              <widget class="QFrame" name="resize_button">
+              <widget class="QFrame" name="frame_button_resize">
                <property name="maximumSize">
                 <size>
                  <width>20</width>
@@ -1118,7 +1118,7 @@ QTableWidget:pressed {
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QLabel" name="label">
+                 <widget class="QLabel" name="lable_resize">
                   <property name="minimumSize">
                    <size>
                     <width>20</width>
