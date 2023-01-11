@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(851, 612)
+        MainWindow.resize(798, 647)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setAutoFillBackground(False)
         self.centralwidget.setStyleSheet("QWidget {\n"
@@ -49,8 +49,6 @@ class Ui_MainWindow(object):
 "    padding: 5px 10px;\n"
 "    background-color: rgb(173,173,173);\n"
 "    color: rgb(0,0,0);  \n"
-"\n"
-"    border: 2px solid grey;\n"
 "}\n"
 "QLabel:pressed {\n"
 "    border: 2px solid green;\n"
@@ -82,8 +80,8 @@ class Ui_MainWindow(object):
 "    spacing: 3px;           \n"
 "    padding: 5px 10px;\n"
 "    background-color: rgb(173,173,173);\n"
-"    color: rgb(0,0,0);  \n"
-"    border: 2px solid grey;\n"
+"    color: rgb(0,0,0); \n"
+"     border: 2px solid grey;\n"
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: rgb(255, 142, 119);\n"
@@ -101,7 +99,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_min_window.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../Downloads/min.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("icon/min.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_min_window.setIcon(icon)
         self.pushButton_min_window.setFlat(True)
         self.pushButton_min_window.setObjectName("pushButton_min_window")
@@ -141,7 +139,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_close_window.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../../Downloads/close.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("icon/exit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_close_window.setIcon(icon1)
         self.pushButton_close_window.setFlat(True)
         self.pushButton_close_window.setObjectName("pushButton_close_window")
@@ -155,9 +153,17 @@ class Ui_MainWindow(object):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.tableWidget_search_camera = QtWidgets.QTableWidget(self.verticalFrame_bot)
+        self.table_frame = QtWidgets.QFrame(self.verticalFrame_bot)
+        self.table_frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.table_frame.setObjectName("table_frame")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.table_frame)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setSpacing(0)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.tableWidget_search_camera = QtWidgets.QTableWidget(self.table_frame)
         self.tableWidget_search_camera.setEnabled(True)
         self.tableWidget_search_camera.viewport().setProperty("cursor", QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.tableWidget_search_camera.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.tableWidget_search_camera.setStyleSheet("QTableWidget {\n"
 "background-color: rgb(173,173,173);\n"
 "    spacing: 3px;           \n"
@@ -196,11 +202,39 @@ class Ui_MainWindow(object):
         self.tableWidget_search_camera.setHorizontalHeaderItem(4, item)
         self.tableWidget_search_camera.horizontalHeader().setVisible(True)
         self.tableWidget_search_camera.horizontalHeader().setCascadingSectionResizes(False)
+        self.tableWidget_search_camera.horizontalHeader().setDefaultSectionSize(140)
         self.tableWidget_search_camera.horizontalHeader().setHighlightSections(True)
         self.tableWidget_search_camera.horizontalHeader().setSortIndicatorShown(True)
         self.tableWidget_search_camera.verticalHeader().setVisible(False)
         self.tableWidget_search_camera.verticalHeader().setSortIndicatorShown(False)
-        self.verticalLayout.addWidget(self.tableWidget_search_camera)
+        self.verticalLayout_3.addWidget(self.tableWidget_search_camera)
+        self.low_bot = QtWidgets.QFrame(self.table_frame)
+        self.low_bot.setMinimumSize(QtCore.QSize(0, 20))
+        self.low_bot.setObjectName("low_bot")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.low_bot)
+        self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_6.setSpacing(0)
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.horizontalFrame_2 = QtWidgets.QFrame(self.low_bot)
+        self.horizontalFrame_2.setMaximumSize(QtCore.QSize(16777215, 20))
+        self.horizontalFrame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.horizontalFrame_2.setObjectName("horizontalFrame_2")
+        self.horizontalLayout_9 = QtWidgets.QHBoxLayout(self.horizontalFrame_2)
+        self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_9.setSpacing(0)
+        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.horizontalLayout_6.addWidget(self.horizontalFrame_2)
+        self.resize_button = QtWidgets.QFrame(self.low_bot)
+        self.resize_button.setMaximumSize(QtCore.QSize(20, 20))
+        self.resize_button.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.resize_button.setObjectName("resize_button")
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.resize_button)
+        self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_8.setSpacing(0)
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        self.horizontalLayout_6.addWidget(self.resize_button)
+        self.verticalLayout_3.addWidget(self.low_bot)
+        self.verticalLayout.addWidget(self.table_frame)
         self.verticalLayout_2.addWidget(self.verticalFrame_bot)
         MainWindow.setCentralWidget(self.centralwidget)
 
