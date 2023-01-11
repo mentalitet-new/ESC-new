@@ -31,7 +31,7 @@ class MainFrame(QMainWindow):
         self.row_counter = 0
         self.print_test_text()
         self.init_columns_table()
-        self.sizegrip = QSizeGrip(self.ui.resize_button)
+        self.sizegrip = QSizeGrip(self.ui.lable_resize)
 
     def init_columns_table(self):
         """

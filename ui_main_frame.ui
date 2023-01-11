@@ -709,7 +709,7 @@ QPushButton:pressed {
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="verticalFrame">
+           <widget class="QFrame" name="verticalFrame_1">
             <property name="minimumSize">
              <size>
               <width>80</width>
