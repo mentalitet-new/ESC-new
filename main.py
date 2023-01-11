@@ -16,7 +16,7 @@ class MainFrame(QMainWindow):
         self.ui.label_top.setText(applicationName)
 
         self.setWindowFlags(Qt.FramelessWindowHint)
-        self.setAttribute(Qt.WA_TranslucentBackground)
+        # self.setAttribute(Qt.WA_TranslucentBackground)
 
         self.dragPos = self.pos()
 
